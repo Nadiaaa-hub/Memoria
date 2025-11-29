@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/img/logo.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memoria</title>
+  </head>
+
+  <body class="bg-gray-50 text-gray-900">
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <div class="main-logo">
+            <a href="index.html">
+              <img src="./src/img/Logo+name.svg" alt="Memoria logo" />
+            </a>
+          </div>
+          <nav class="header__nav">
+            <ul class="hidden md:flex space-x-8 text-sm font-medium">
+              <li>
+                <a
+                  class="link"
+                  href="#features"
+                  class="text-gray-600 hover:text-blue-600 transition duration-200"
+                  >Key Features</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link"
+                  href="#about"
+                  class="text-gray-600 hover:text-blue-600 transition duration-200"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  class="link"
+                  href="#faq"
+                  class="text-gray-600 hover:text-blue-600 transition duration-200"
+                  >FAQ</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__button button modal-btn-open" type="button">
+            Download
+          </button>
+
+          <!-- Бургер для мобільного меню -->
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger">
+            <span></span>
+          </label>
+        </div>
+      </div>
+
+      <ul class="mobile-menu">
+        <li class="abt_us">
+          <a
+            class="link"
+            href="#features"
+            class="text-gray-600 hover:text-blue-600 transition duration-200"
+            >Key Features</a
+          >
+        </li>
+        <li>
+          <a
+            class="link"
+            href="#about"
+            class="text-gray-600 hover:text-blue-600 transition duration-200"
+            >About Us</a
+          >
+        </li>
+        <li>
+          <a
+            class="link"
+            href="#faq"
+            class="text-gray-600 hover:text-blue-600 transition duration-200"
+            >FAQ</a
+          >
+        </li>
+        <li>
+          <button type="button" class="js-switch-button">Download</button>
+        </li>
+      </ul>
+
+      <div class="overlay"></div>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Preserve Your Family's Story</h1>
+            <p>
+              Memoria is a platform where every life becomes a story, and family
+              moments stay forever. Collect photos, events, voice memories, and
+              important moments in one secure space.
+            </p>
+            <button
+              class="hero-section__button button modal-btn-close"
+              type="button">
+              Get Started
+            </button>
+            <button
+              class="hero-section__button button modal-btn-close"
+              type="button">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
