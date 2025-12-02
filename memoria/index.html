@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/img/logo.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memoria</title>
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a class="header__a" href="/">
+              <img src="./img/Logo+name.svg" alt="Логотип Memoria" />
+            </a>
+            <ul class="header__menu">
+              <li><a class="link" href="#features">Key Features</a></li>
+              <li><a class="link" href="#about">About Us</a></li>
+              <li><a class="link" href="#faq">FAQ</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="button">Download</button>
+
+          <!-- Бургер для мобільного меню -->
+          <input type="checkbox" id="burger-toggle" />
+          <label for="burger-toggle" class="burger">
+            <span></span>
+          </label>
+        </div>
+      </div>
+
+      <ul class="mobile-menu">
+        <li><a class="link" href="#features">Key Features</a></li>
+        <li><a class="link" href="#about">About Us</a></li>
+        <li><a class="link" href="#faq">FAQ</a></li>
+        <li><button type="button" class="button">Download</button></li>
+      </ul>
+
+      <div class="overlay"></div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Preserve Your Family's Story</h1>
+            <p>
+              Memoria is a platform where every life becomes a story, and family
+              memories stay forever. <br />
+              Collect photos, events, voice memories, and important moments in
+              one secure space.
+            </p>
+            <div class="hero-buttons">
+              <button class="button" type="button">Get Started</button>
+              <button class="button button--border" type="button">
+                Learn More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Memoria Section -->
+      <section id="why" class="why-memoria-section">
+        <div class="container">
+          <div class="why-memoria-section__container">
+            <div class="why-memoria-section__content">
+              <h2 class="why-memoria-section__title">Why Memoria?</h2>
+              <p class="why-memoria-section__p">
+                Not just photos. Stories that truly matter.
+              </p>
+            </div>
+
+            <div class="why-memoria-section__list">
+              <div>
+                <img src="./img/Family.svg" class="w-12 h-12 mx-auto" />
+                <h3 class="why-memoria-section__subtitle">
+                  One Family — One Shared Space
+                </h3>
+                <p class="why-memoria-section__text">
+                  Invite your relatives, add stories, photos, and biographies
+                  together. <br />
+                  Build a single digital family archive that grows through
+                  generations.
+                </p>
+              </div>
+
+              <div>
+                <img
+                  src="./img/Preserving- Memory.svg"
+                  class="w-12 h-12 mx-auto" />
+                <h3 class="why-memoria-section__subtitle">Preserving Memory</h3>
+                <p class="why-memoria-section__text">
+                  Memorial pages help honor loved ones who are no longer with
+                  us. Add their stories, life milestones, photos, memories,
+                  quotes, and even recipes — all preserved forever.
+                </p>
+              </div>
+
+              <div>
+                <img src="./img/privacy_first.svg" class="w-12 h-12 mx-auto" />
+                <h3 class="why-memoria-section__subtitle">Privacy First</h3>
+                <p class="why-memoria-section__text">
+                  You control who sees what. <br />
+                  Make profiles private, hide your family tree, or share it
+                  selectively. <br />
+                  Your memories are yours only.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Download Section -->
+      <section class="download-cta-section" id="download">
+        <div class="download-cta-section__background-elements">
+          <img
+            src="./img/twig.png"
+            alt="Decorative Branch"
+            class="download-cta-section__branch download-cta-section__branch--left" />
+          <img
+            src="./img/phone1.png"
+            alt="Family Biography Mockup"
+            class="download-cta-section__mockup phone1 download-cta-section__mockup--left" />
+          <img
+            src="./img/phone2.png"
+            alt="Family Tree Mockup"
+            class="download-cta-section__mockup phone2 download-cta-section__mockup--right" />
+        </div>
+
+        <div class="container download-cta-section__container">
+          <h2 class="download-cta-section__title">Download Memoria</h2>
+          <p class="download-cta-section__subtitle">
+            Create one private family archive, collaboratively preserving the
+            true stories and memories of your loved ones forever.
+          </p>
+
+          <div class="download-cta-section__buttons-group">
+            <a
+              href="#"
+              class="download-cta-section__button download-cta-section__button--app-store">
+              <img src="./img/App store.svg" alt="App Store" />
+            </a>
+            <a
+              href="#"
+              class="download-cta-section__button download-cta-section__button--google-play">
+              <img src="./img/google play.svg" alt="Google Play" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="features-section">
+        <div class="container">
+          <h2 class="features-section__title">Key Features</h2>
+
+          <div class="feature-block feature-block--left">
+            <div class="feature-block__content">
+              <h3 class="feature-block__subtitle">Interactive Family Tree</h3>
+              <ul class="feature-block__list">
+                <li class="feature-block__item">
+                  Add parents, children, grandparents in just a few taps
+                </li>
+                <li class="feature-block__item">
+                  View your tree in a simple, beautiful visual layout
+                </li>
+                <li class="feature-block__item">
+                  Understand generational connections and family lines
+                </li>
+                <li class="feature-block__item">
+                  Explore open family trees or profiles with biographies from
+                  other users
+                </li>
+              </ul>
+            </div>
+            <div class="feature-block__media">
+              <img
+                src="./img/feature1.png"
+                alt="Family Tree Mockup"
+                class="feature-block__image" />
+            </div>
+          </div>
+
+          <div class="feature-block feature-block--right">
+            <div class="feature-block__content">
+              <h3 class="feature-block__subtitle">
+                Profiles for Each Family Member
+              </h3>
+              <ul class="feature-block__list">
+                <li class="feature-block__item">Photos, key dates, places</li>
+                <li class="feature-block__item">Detailed life biographies</li>
+                <li class="feature-block__item">
+                  Separate sections: childhood, youth, adulthood
+                </li>
+                <li class="feature-block__item">Multiple photo albums</li>
+              </ul>
+            </div>
+            <div class="feature-block__media">
+              <img
+                src="./img/feature2.png"
+                alt="Profile Creation Mockup"
+                class="feature-block__image" />
+            </div>
+          </div>
+
+          <div class="feature-block feature-block--left">
+            <div class="feature-block__content">
+              <h3 class="feature-block__subtitle">Life Events & Memories</h3>
+              <ul class="feature-block__list">
+                <li class="feature-block__item">
+                  Photos, videos, and text entries
+                </li>
+                <li class="feature-block__item">
+                  Voice memories — converted to text with AI
+                </li>
+                <li class="feature-block__item">
+                  Build a full life timeline for each person
+                </li>
+                <li class="feature-block__item">
+                  Add important dates and family events
+                </li>
+              </ul>
+            </div>
+            <div class="feature-block__media">
+              <img
+                src="./img/feature3.png"
+                alt="Biography Mockup"
+                class="feature-block__image" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing-section">
+        <div class="container">
+          <h2 class="pricing-section__title">Choose Your Plan</h2>
+
+          <div class="pricing-plans-wrapper">
+            <div class="plan-card">
+              <h3 class="plan-card__title plan-card__first">Free</h3>
+              <p class="plan-card__price first">$0/mo</p>
+              <p class="plan-card__subtitle first">
+                Everything you need to get started
+              </p>
+              <button class="button plan-card__button first">
+                Get Started
+              </button>
+              <ul class="plan-card__features">
+                <li>Create your family tree</li>
+                <li>Add events and photos</li>
+                <li>Create your biography and memorial biographies</li>
+                <li>Limited media storage</li>
+              </ul>
+            </div>
+
+            <div class="plan-card plan-card--premium">
+              <span class="plan-card__badge">Most Popular</span>
+              <h3 class="plan-card__title plan-card__second">
+                Memoria <br />
+                Premium
+              </h3>
+              <p class="plan-card__price second">$1.99/mo</p>
+              <p class="plan-card__secondary-price">(or $17.99/year)</p>
+              <p class="plan-card__subtitle second">
+                Full access without limits
+              </p>
+              <button class="button plan-card__button second">
+                Get Started
+              </button>
+              <ul class="plan-card__features">
+                <li>Everything in the Free plan</li>
+                <li>Unlimited photo & video uploads</li>
+                <li>AI voice-to-text conversion</li>
+                <li>AI-generated autobiographies</li>
+                <li>More media storage recommended</li>
+              </ul>
+            </div>
+
+            <div class="plan-card">
+              <h3 class="plan-card__title plan-card__third">
+                Family Memoria Premium
+              </h3>
+              <p class="plan-card__price third">$2.99/mo</p>
+              <p class="plan-card__secondary-price">(or $23.99/year)</p>
+              <p class="plan-card__subtitle third">
+                For up to 5 family members in one shared space
+              </p>
+              <button class="button plan-card__button third">
+                Get Started
+              </button>
+              <ul class="plan-card__features">
+                <li>Everything in Personal Premium</li>
+                <li>Collaborative editing of the family tree</li>
+                <li>Shared media storage</li>
+                <li>Shared memorial pages</li>
+                <li>All features for the whole family</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA Banner -->
+      <section class="cta-banner">
+        <div class="cta-banner__content-wrapper">
+          <div class="cta-banner__content-area container">
+            <img
+              src="./img/Tree.png"
+              alt="Decorative Tree"
+              class="cta-banner__tree-decor" />
+            <div class="cta-banner__content">
+              <h2 class="cta-banner__title">
+                Become the Keeper of Your Family's Legacy
+              </h2>
+              <p class="cta-banner__text">
+                Start building your family tree today. <br />
+                Memoria — the place where memories live.
+              </p>
+              <div class="cta-banner__buttons-group">
+                <a href="#"
+                  ><img
+                    src="./img/App store.svg"
+                    alt="Available on the App Store"
+                /></a>
+                <a href="#"
+                  ><img src="./img/google play.svg" alt="Get it on Google Play"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="cta-banner__image-placeholder"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer__container">
+        <div class="footer__top-row">
+          <a class="footer__logo-group" href="/">
+            <img
+              src="./img/Logo.svg"
+              alt="Memoria Logo Icon"
+              class="footer__logo-icon" />
+          </a>
+          <nav class="footer__nav footer__nav--links">
+            <a href="#features">Key Features</a>
+            <a href="#about">About Us</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <div class="footer__app-buttons">
+            <img src="./img/App store.svg" alt="Download on App Store" />
+            <img src="./img/google play.svg" alt="Download on Google Play" />
+          </div>
+        </div>
+        <div class="footer__bottom-row">
+          <p class="footer__copyright">© Memoria 2025</p>
+          <nav class="footer__nav footer__nav--legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Other Policies</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 1000, once: true });
+    </script>
+  </body>
+</html>
