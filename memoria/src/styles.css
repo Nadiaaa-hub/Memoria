@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   --color-text-primary: #323232;
   --color-primary-dark-blue: #306C7B;
@@ -790,6 +789,11 @@ p {
   letter-spacing: 1.1px;
 }
 
+.cta-banner__buttons-group {
+  display: flex;
+  gap: 16px;
+}
+
 .cta-banner__content-wrapper {
   display: flex;
   min-height: 350px;
@@ -1233,4 +1237,10 @@ p {
 
 .overlay.open {
   display: block;
+}
+
+.download-cta-section__buttons-group a {
+  margin: 10px;
+  display: inline-block;
+  cursor: pointer;
 }

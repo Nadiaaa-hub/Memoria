@@ -16,6 +16,10 @@
     <link
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="./src/styles.css" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -158,13 +162,16 @@
 
           <div class="download-cta-section__buttons-group">
             <a
+              id="modalButton"
+              data-bs-toggle="tooltip"
+              title="Coming soon!"
               href="#"
               class="download-cta-section__button download-cta-section__button--app-store">
               <img src="./img/App store.svg" alt="App Store" />
             </a>
             <a
-              href="#"
-              class="download-cta-section__button download-cta-section__button--google-play">
+              class="download-cta-section__button download-cta-section__button--google-play"
+              href="#">
               <img src="./img/google play.svg" alt="Google Play" />
             </a>
           </div>
@@ -340,12 +347,20 @@
                 Memoria — the place where memories live.
               </p>
               <div class="cta-banner__buttons-group">
-                <a href="#"
+                <a
+                  href="#"
+                  id="modalButton"
+                  data-bs-toggle="tooltip"
+                  title="Coming soon!"
                   ><img
                     src="./img/App store.svg"
                     alt="Available on the App Store"
                 /></a>
-                <a href="#"
+                <a
+                  href="#"
+                  id="modalButton"
+                  data-bs-toggle="tooltip"
+                  title="Coming soon!"
                   ><img src="./img/google play.svg" alt="Get it on Google Play"
                 /></a>
               </div>
@@ -372,8 +387,18 @@
             <a href="#faq">FAQ</a>
           </nav>
           <div class="footer__app-buttons">
-            <img src="./img/App store.svg" alt="Download on App Store" />
-            <img src="./img/google play.svg" alt="Download on Google Play" />
+            <img
+              id="modalButton"
+              data-bs-toggle="tooltip"
+              title="Coming soon!"
+              src="./img/App store.svg"
+              alt="Download on App Store" />
+            <img
+              id="modalButton"
+              data-bs-toggle="tooltip"
+              title="Coming soon!"
+              src="./img/google play.svg"
+              alt="Download on Google Play" />
           </div>
         </div>
         <div class="footer__bottom-row">
@@ -389,6 +414,9 @@
 
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="./src/burger-menu.js"></script>
+    <script type="module" src="./src/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
       AOS.init({ duration: 1000, once: true });
     </script>
