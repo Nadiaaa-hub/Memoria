@@ -1,4 +1,4 @@
-import { burgerMenu } from "./components-js/burger-menu";
+import { burgerMenu } from "./components-js/burger-menu.js";
 import { initCtaTooltips } from "./components-js/tailwind.config.js";
 import { setLanguage } from "./components-js/language-switcher.js";
 
