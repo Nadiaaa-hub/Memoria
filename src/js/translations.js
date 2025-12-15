@@ -141,4 +141,44 @@ export default {
     ua: "Інші політики",
     en: "Other Policies",
   },
+  aboutTitle: {
+    ua: "Про нас",
+    en: "About Us",
+  },
+  aboutLead: {
+    ua: "Memoria — це місце, де оживають історії вашої родини.",
+    en: "Memoria is where your family’s stories come alive.",
+  },
+  aboutText1: {
+    ua: "Ми створили цей додаток, бо зрозуміли важливу річ: спогади тьмяніють, фото губляться, а історії зникають. Memoria змінює це.",
+    en: "We built this app because we realized something important: memories fade, photos get lost, and stories disappear. Memoria changes that.",
+  },
+  aboutText2: {
+    ua: "Наша місія проста — допомогти людям зберегти найважливіші моменти та перетворити їх на живий сімейний спадок.",
+    en: "Our mission is simple - to help people preserve their most meaningful moments and turn them into a living family legacy.",
+  },
+  aboutBeliefIntro: {
+    ua: "Ми віримо, що сімейне дерево — це більше, ніж дати.",
+    en: "We believe family history is more than dates and documents.",
+  },
+  aboutList1: {
+    ua: "Це сміх.",
+    en: "It’s laughter.",
+  },
+  aboutList2: {
+    ua: "Це історії за вечерею.",
+    en: "It’s stories told at the dinner table.",
+  },
+  aboutList3: {
+    ua: "Це фото, про які ви забули.",
+    en: "It’s the photos you forgot existed.",
+  },
+  aboutList4: {
+    ua: "Це маленькі моменти, які варто пам’ятати.",
+    en: "It’s the small moments that deserve to be remembered.",
+  },
+  aboutFooter: {
+    ua: "Ваші спогади важливі. Збережімо їх разом.",
+    en: "Your memories matter. Let’s preserve them together.",
+  },
 };
