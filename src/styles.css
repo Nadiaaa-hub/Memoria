@@ -1,4 +1,4 @@
-@import "tailwindcss";
+/* @import "tailwindcss"; */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -254,7 +254,7 @@ p {
   text-align: center;
   padding: 270px 0;
   background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%),
-    url("/img/background.png");
+    url("/public/img/background.png");
   background-position: center top;
   background-size: cover;
   color: white;
@@ -1002,10 +1002,11 @@ p {
   width: 50%;
   max-width: 50%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('/img/Family.png');
+    url('/public/img/Family.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
+  order: 2;
 }
 
 @media (max-width: 768px) {
@@ -1486,16 +1487,6 @@ p {
   }
 }
 
-.cta-banner__image-placeholder {
-  width: 50%;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('/img/Family.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  order: 2;
-
-}
 
 .cta-banner__tree-decor {
   position: absolute;
