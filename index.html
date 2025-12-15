@@ -25,13 +25,12 @@
   </head>
 
   <body>
-    <!-- Header -->
     <header class="header">
       <div class="container">
         <div class="header__container">
           <nav class="header__nav">
             <a class="header__a" href="/">
-              <img src="/public/img/Logo+name.svg" alt="Логотип Memoria" />
+              <img src="./public/img/Logo+name.svg" alt="Логотип Memoria" />
             </a>
             <ul class="header__menu">
               <li>
@@ -62,7 +61,6 @@
             </span>
           </div>
 
-          <!-- Бургер для мобільного меню -->
           <input type="checkbox" id="burger-toggle" />
           <label for="burger-toggle" class="burger">
             <span></span>
@@ -73,7 +71,7 @@
       <nav class="mobile-menu">
         <div>
           <a class="header__a" href="/">
-            <img src="/public/img/Logo+name.svg" alt="Логотип Memoria" />
+            <img src="./public/img/Logo+name.svg" alt="Логотип Memoria" />
           </a>
         </div>
         <ul>
@@ -113,7 +111,6 @@
     </header>
 
     <main>
-      <!-- Hero Section -->
       <section class="hero-section">
         <div class="container">
           <div class="hero-content">
@@ -144,7 +141,6 @@
         </div>
       </section>
 
-      <!-- Why Memoria Section -->
       <section id="why" class="why-memoria-section">
         <div class="container">
           <div class="why-memoria-section__container">
@@ -159,7 +155,7 @@
 
             <div class="why-memoria-section__list">
               <div>
-                <img src="/public/img/Family.svg" alt="Family image" />
+                <img src="./public/img/Family.svg" alt="Family image" />
                 <h3 class="why-memoria-section__subtitle" data-i18n="oneFamily">
                   One Family — One Shared Space
                 </h3>
@@ -173,7 +169,7 @@
 
               <div>
                 <img
-                  src="/public/img/Preserving- Memory.svg"
+                  src="./public/img/Preserving- Memory.svg"
                   alt="Preserving Memory image" />
                 <h3
                   class="why-memoria-section__subtitle"
@@ -189,7 +185,7 @@
 
               <div>
                 <img
-                  src="/public/img/privacy_first.svg"
+                  src="./public/img/privacy_first.svg"
                   alt=" Privacy First image" />
                 <h3
                   class="why-memoria-section__subtitle"
@@ -208,19 +204,18 @@
         </div>
       </section>
 
-      <!-- Download Section -->
       <section class="download-cta-section" id="download">
         <div class="download-cta-section__background-elements">
           <img
-            src="/public/img/twig.png"
+            src="./public/img/twig.png"
             alt="Decorative Branch"
             class="download-cta-section__branch download-cta-section__branch--left" />
           <img
-            src="/public/img/phone1.png"
+            src="./public/img/phone1.png"
             alt="Family Biography Mockup"
             class="download-cta-section__mockup phone1 download-cta-section__mockup--left" />
           <img
-            src="/public/img/phone2.png"
+            src="./public/img/phone2.png"
             alt="Family Tree Mockup"
             class="download-cta-section__mockup phone2 download-cta-section__mockup--right" />
         </div>
@@ -241,18 +236,17 @@
               title="Coming soon!"
               href="#"
               class="download-cta-section__button download-cta-section__button--app-store">
-              <img src="/public/img/App store.svg" alt="App Store" />
+              <img src="./public/img/App store.svg" alt="App Store" />
             </a>
             <a
               class="download-cta-section__button download-cta-section__button--google-play"
               href="#">
-              <img src="/public/img/google play.svg" alt="Google Play" />
+              <img src="./public/img/google play.svg" alt="Google Play" />
             </a>
           </div>
         </div>
       </section>
 
-      <!-- Features Section -->
       <section id="features" class="features-section">
         <div class="container">
           <h2 class="features-section__title" data-i18n="keyFeaturesTitle">
@@ -282,7 +276,7 @@
             </div>
             <div class="feature-block__media">
               <img
-                src="/public/img/feature1.png"
+                src="./public/img/feature1.png"
                 alt="Family Tree Mockup"
                 class="feature-block__image" />
             </div>
@@ -310,7 +304,7 @@
             </div>
             <div class="feature-block__media">
               <img
-                src="/public/img/feature2.png"
+                src="./public/img/feature2.png"
                 alt="Profile Creation Mockup"
                 class="feature-block__image" />
             </div>
@@ -338,7 +332,7 @@
             </div>
             <div class="feature-block__media">
               <img
-                src="/public/img/feature3.png"
+                src="./public/img/feature3.png"
                 alt="Biography Mockup"
                 class="feature-block__image" />
             </div>
@@ -346,87 +340,16 @@
         </div>
       </section>
 
-      <!-- Pricing Section -->
-      <!-- <section class="pricing-section">
-        <div class="container">
-          <h2 class="pricing-section__title">Choose Your Plan</h2>
-
-          <div class="pricing-plans-wrapper">
-            <div class="plan-card">
-              <h3 class="plan-card__title plan-card__first">Free</h3>
-              <p class="plan-card__price first">$0/mo</p>
-              <p class="plan-card__subtitle first">
-                Everything you need to get started
-              </p>
-              <button class="button plan-card__button first">
-                Get Started
-              </button>
-              <ul class="plan-card__features">
-                <li>Create your family tree</li>
-                <li>Add events and photos</li>
-                <li>Create your biography and memorial biographies</li>
-                <li>Limited media storage</li>
-              </ul>
-            </div>
-
-            <div class="plan-card plan-card--premium">
-              <span class="plan-card__badge">Most Popular</span>
-              <h3 class="plan-card__title plan-card__second">
-                Memoria <br />
-                Premium
-              </h3>
-              <p class="plan-card__price second">$1.99/mo</p>
-              <p class="plan-card__secondary-price">(or $17.99/year)</p>
-              <p class="plan-card__subtitle second">
-                Full access without limits
-              </p>
-              <button class="button plan-card__button second">
-                Get Started
-              </button>
-              <ul class="plan-card__features">
-                <li>Everything in the Free plan</li>
-                <li>Unlimited photo & video uploads</li>
-                <li>AI voice-to-text conversion</li>
-                <li>AI-generated autobiographies</li>
-                <li>More media storage recommended</li>
-              </ul>
-            </div>
-
-            <div class="plan-card">
-              <h3 class="plan-card__title plan-card__third">
-                Family Memoria Premium
-              </h3>
-              <p class="plan-card__price third">$2.99/mo</p>
-              <p class="plan-card__secondary-price">(or $23.99/year)</p>
-              <p class="plan-card__subtitle third">
-                For up to 5 family members in one shared space
-              </p>
-              <button class="button plan-card__button third">
-                Get Started
-              </button>
-              <ul class="plan-card__features">
-                <li>Everything in Personal Premium</li>
-                <li>Collaborative editing of the family tree</li>
-                <li>Shared media storage</li>
-                <li>Shared memorial pages</li>
-                <li>All features for the whole family</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- CTA Banner -->
       <section class="cta-banner">
         <div class="cta-banner__content-wrapper">
           <div class="cta-banner__content-area container">
             <img
-              src="/public/img/Tree.png"
+              src="./public/img/Tree.png"
               alt="Decorative Tree"
               class="js-cta-desktop-tree" />
 
             <img
-              src="/public/img/Mobile-Tree.png"
+              src="./public/img/Mobile-Tree.png"
               alt="Decorative Tree Mobile"
               class="js-cta-mobile-tree" />
 
@@ -445,7 +368,7 @@
                   data-bs-toggle="tooltip"
                   title="Coming soon!"
                   ><img
-                    src="/public/img/App store.svg"
+                    src="./public/img/App store.svg"
                     alt="Available on the App Store"
                 /></a>
                 <a
@@ -454,7 +377,7 @@
                   data-bs-toggle="tooltip"
                   title="Coming soon!"
                   ><img
-                    src="/public/img/google play.svg"
+                    src="./public/img/google play.svg"
                     alt="Get it on Google Play"
                 /></a>
               </div>
@@ -465,13 +388,12 @@
       </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__top-row">
           <a class="footer__logo-group" href="/">
             <img
-              src="/public/img/Footer-Logo+name.svg"
+              src="./public/img/Footer-Logo+name.svg"
               alt="Memoria Logo Icon"
               class="footer__logo-icon" />
           </a>
@@ -485,13 +407,13 @@
               class="download-cta-section__button ... js-modal-button"
               data-bs-toggle="tooltip"
               title="Coming soon!"
-              src="/public/img/App store.svg"
+              src="./public/img/App store.svg"
               alt="Download on App Store" />
             <img
               class="download-cta-section__button ... js-modal-button"
               data-bs-toggle="tooltip"
               title="Coming soon!"
-              src="/public/img/google play.svg"
+              src="./public/img/google play.svg"
               alt="Download on Google Play" />
           </div>
         </div>
@@ -502,13 +424,13 @@
               class="download-cta-section__button ... js-modal-button"
               data-bs-toggle="tooltip"
               title="Coming soon!"
-              src="/public/img/App store.svg"
+              src="./public/img/App store.svg"
               alt="Download on App Store" />
             <img
               class="download-cta-section__button ... js-modal-button"
               data-bs-toggle="tooltip"
               title="Coming soon!"
-              src="/public/img/google play.svg"
+              src="./public/img/google play.svg"
               alt="Download on Google Play" />
           </div>
           <nav class="footer__nav footer__nav--legal">
