@@ -42,7 +42,9 @@
                 <a class="link" data-i18n="about" href="#about">About Us</a>
               </li>
               <li>
-                <a class="link" data-ua="FAQ" data-en="FAQ" href="#faq">FAQ</a>
+                <a class="link" data-ua="FAQ" data-en="FAQ" href="faq.html"
+                  >FAQ</a
+                >
               </li>
             </ul>
           </nav>
@@ -432,20 +434,20 @@
                 <p data-i18n="aboutBeliefIntro">
                   We believe family history is:
                 </p>
-              <ul class="feature-block__list">
-                <li class="feature-block__item" data-i18n="aboutList1">
-                  It’s laughter.
-                </li>
-                <li class="feature-block__item" data-i18n="aboutList2">
-                  It’s stories told at the dinner table.
-                </li>
-                <li class="feature-block__item" data-i18n="aboutList3">
-                  It’s the photos you forgot existed.
-                </li>
-                <li class="feature-block__item" data-i18n="aboutList4">
-                  It’s the small moments that deserve to be remembered.
-                </li>
-              </ul>
+                <ul class="feature-block__list">
+                  <li class="feature-block__item" data-i18n="aboutList1">
+                    It’s laughter.
+                  </li>
+                  <li class="feature-block__item" data-i18n="aboutList2">
+                    It’s stories told at the dinner table.
+                  </li>
+                  <li class="feature-block__item" data-i18n="aboutList3">
+                    It’s the photos you forgot existed.
+                  </li>
+                  <li class="feature-block__item" data-i18n="aboutList4">
+                    It’s the small moments that deserve to be remembered.
+                  </li>
+                </ul>
                 <p class="about-split__footer" data-i18n="aboutFooter">
                   Your memories matter. Let’s preserve them together.
                 </p>
@@ -510,14 +512,15 @@
                   It’s the small moments that deserve to be remembered.
                 </li>
               </ul>
-            </div> -->
+            </div>
 
-            <!-- <p class="about-section__footer" data-i18n="aboutFooter">
+            <p class="about-section__footer" data-i18n="aboutFooter">
               Your memories matter. Let’s preserve them together.
-            </p> -->
+            </p>
           </div>
         </div>
-      </section>
+      </section> -->
+
       <section class="cta-banner">
         <div class="cta-banner__content-wrapper">
           <div class="cta-banner__content-area container">
@@ -575,44 +578,46 @@
               alt="Memoria Logo Icon"
               class="footer__logo-icon" />
           </a>
-          <nav class="footer__nav footer__nav--links">
-            <a data-i18n="keyFeatures" href="#features">Key Features</a>
-            <a data-i18n="about" href="#about">About Us</a>
-            <a href="#faq">FAQ</a>
 
-            <div class="footer__app-buttons desktop">
+          <nav class="footer__nav--links">
+            <a data-i18n="keyFeatures" href="index.html#features"
+              >Key Features</a
+            >
+            <a data-i18n="about" href="index.html#about">About Us</a>
+            <a href="faq.html">FAQ</a>
+          </nav>
+
+          <div class="footer__app-buttons desktop">
+            <a href="#" data-bs-toggle="tooltip" title="Coming soon!">
               <img
-                class="download-cta-section__button ... js-modal-button"
-                data-bs-toggle="tooltip"
-                title="Coming soon!"
                 src="./public/img/app-store.svg"
                 alt="Download on App Store" />
+            </a>
+            <a href="#" data-bs-toggle="tooltip" title="Coming soon!">
               <img
-                class="download-cta-section__button ... js-modal-button"
-                data-bs-toggle="tooltip"
-                title="Coming soon!"
                 src="./public/img/google-play.svg"
                 alt="Download on Google Play" />
-            </div>
-          </nav>
+            </a>
+          </div>
         </div>
+
         <div class="footer__bottom-row">
           <p class="footer__copyright">© Memoria 2025</p>
+
           <div class="footer__app-buttons mobile">
-            <img
-              class="download-cta-section__button ... js-modal-button"
-              data-bs-toggle="tooltip"
-              title="Coming soon!"
-              src="./public/img/app-store.svg"
-              alt="Download on App Store" />
-            <img
-              class="download-cta-section__button ... js-modal-button"
-              data-bs-toggle="tooltip"
-              title="Coming soon!"
-              src="./public/img/google-play.svg"
-              alt="Download on Google Play" />
+            <a href="#" data-bs-toggle="tooltip" title="Coming soon!">
+              <img
+                src="./public/img/app-store.svg"
+                alt="Download on App Store" />
+            </a>
+            <a href="#" data-bs-toggle="tooltip" title="Coming soon!">
+              <img
+                src="./public/img/google-play.svg"
+                alt="Download on Google Play" />
+            </a>
           </div>
-          <nav class="footer__nav footer__nav--legal">
+
+          <nav class="footer__nav--legal">
             <a href="#" data-i18n="privacyPolicy">Privacy Policy</a>
             <a href="#" data-i18n="terms">Terms of Service</a>
             <a href="#" data-i18n="otherPolicies">Other Policies</a>
