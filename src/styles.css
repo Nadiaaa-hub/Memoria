@@ -1002,7 +1002,7 @@ p {
   width: 50%;
   max-width: 50%;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('/public/img/Family.png');
+    url('/public/img/family.png');
   background-size: cover;
   background-position: center right;
   background-repeat: no-repeat;
