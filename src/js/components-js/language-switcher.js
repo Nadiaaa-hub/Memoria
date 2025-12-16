@@ -12,6 +12,7 @@ export function initLanguageSwitcher() {
     });
   });
 }
+
 export function setLanguage(lang) {
   const langButtons = document.querySelectorAll(".js-switch-button");
 
@@ -24,30 +25,22 @@ export function setLanguage(lang) {
     const key = el.getAttribute("data-i18n");
     if (!key) return;
 
-    const keys = key.split(".");
-    const group = translations[keys[0]];
+    const value = translations[key]?.[lang];
+    if (!value) return;
 
-    if (!group) return;
-
-    const value = group[lang];
-    const index = keys[1] ? Number(keys[1]) : null;
-
-    if (index !== null && Array.isArray(value)) {
-      if (value[index]) el.innerHTML = value[index];
-    } else if (Array.isArray(value)) {
+    if (Array.isArray(value)) {
       el.innerHTML = value.join("<br>");
-    } else if (value) {
+    } else {
       el.innerHTML = value;
     }
   });
 
   langButtons.forEach((btn) => {
-    if (btn.dataset.lang === lang) {
-      btn.classList.add("active");
-    } else {
-      btn.classList.remove("active");
-    }
+    btn.classList.toggle("active", btn.dataset.lang === lang);
   });
 
   localStorage.setItem("lang", lang);
 }
+document.addEventListener("DOMContentLoaded", () => {
+  initLanguageSwitcher();
+});
