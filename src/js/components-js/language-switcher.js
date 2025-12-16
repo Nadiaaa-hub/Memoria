@@ -1,5 +1,4 @@
-import translations from "../translations.js";
-
+import translations from "./translations.js";
 export function setLanguage(lang) {
   const langButtons = document.querySelectorAll(".js-switch-button");
 
