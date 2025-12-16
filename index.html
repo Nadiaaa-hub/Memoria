@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="./public/img/logo.svg" />
 
-    <link
+    <!-- <link
       href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-      rel="stylesheet" />
+      rel="stylesheet" /> -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -116,29 +116,20 @@
       <section class="hero-section">
         <div class="container">
           <div class="hero-content">
-            <h1 data-i18n="preserveTitle">Preserve Your Family's Story</h1>
-            <p data-i18n="preserveText">
-              Memoria is a platform where every life becomes a story, and family
-              memories stay forever. <br />
-              Collect photos, events, voice memories, and important moments in
-              one secure space.
+            <h1
+              class="reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out"
+              data-i18n="preserveTitle">
+              Preserve Your Family's Story
+            </h1>
+
+            <p
+              class="reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out delay-200"
+              data-i18n="preserveText">
+              Memoria is a platform...
             </p>
-            <div class="hero-buttons">
-              <a
-                data-i18n="getStarted"
-                href="#download"
-                class="button"
-                type="button"
-                >Get Started</a
-              >
-              <a
-                data-i18n="learnMore"
-                href="#why"
-                class="button button--border"
-                type="button">
-                Learn More
-              </a>
-            </div>
+
+            <div
+              class="hero-buttons reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out delay-300"></div>
           </div>
         </div>
       </section>
@@ -146,7 +137,8 @@
       <section id="why" class="why-memoria-section">
         <div class="container">
           <div class="why-memoria-section__container">
-            <div class="why-memoria-section__content">
+            <div
+              class="why-memoria-section__content reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out">
               <h2 class="why-memoria-section__title" data-i18n="whyTitle">
                 Why Memoria?
               </h2>
@@ -156,7 +148,8 @@
             </div>
 
             <div class="why-memoria-section__list">
-              <div>
+              <div
+                class="reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out delay-100">
                 <img src="./public/img/one-family.svg" alt="Family image" />
                 <h3 class="why-memoria-section__subtitle" data-i18n="oneFamily">
                   One Family — One Shared Space
@@ -169,7 +162,8 @@
                 </p>
               </div>
 
-              <div>
+              <div
+                class="reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out delay-300">
                 <img
                   src="./public/img/preserving-memory.svg"
                   alt="Preserving Memory image" />
@@ -185,7 +179,8 @@
                 </p>
               </div>
 
-              <div>
+              <div
+                class="reveal opacity-0 translate-y-16 scale-95 transition-all duration-1000 ease-in-out delay-500">
                 <img
                   src="./public/img/privacy_first.svg"
                   alt=" Privacy First image" />
@@ -255,11 +250,14 @@
 
       <section id="features" class="features-section">
         <div class="container">
-          <h2 class="features-section__title" data-i18n="keyFeaturesTitle">
+          <h2
+            class="features-section__title reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out"
+            data-i18n="keyFeaturesTitle">
             Key Features
           </h2>
 
-          <div class="feature-block feature-block--left">
+          <div
+            class="feature-block feature-block--left reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out delay-100">
             <div class="feature-block__content">
               <h3 class="feature-block__subtitle" data-i18n="treeTitle">
                 Interactive Family Tree
@@ -288,7 +286,8 @@
             </div>
           </div>
 
-          <div class="feature-block feature-block--right">
+          <div
+            class="feature-block feature-block--right reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out delay-300">
             <div class="feature-block__content">
               <h3 class="feature-block__subtitle" data-i18n="profilesTitle">
                 Profiles for Each Family Member
@@ -316,7 +315,8 @@
             </div>
           </div>
 
-          <div class="feature-block feature-block--left">
+          <div
+            class="feature-block feature-block--left reveal opacity-0 translate-y-20 transition-all duration-1000 ease-out delay-500">
             <div class="feature-block__content">
               <h3 class="feature-block__subtitle" data-i18n="eventsTitle">
                 Life Events & Memories
@@ -631,8 +631,10 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
-      AOS.init({ duration: 1000, once: true });
+      // AOS.init({ duration: 1000, once: true });
+
       const tooltipTriggerList = document.querySelectorAll(
         '[data-bs-toggle="tooltip"]'
       );

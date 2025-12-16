@@ -181,36 +181,35 @@ export default {
     ua: "Ваші спогади важливі. Збережімо їх разом.",
     en: "Your memories matter. Let’s preserve them together.",
   },
-
-  "faq.q1": {
+  faq_q1: {
     ua: "Чи можу я приховати своє дерево?",
     en: "Can I hide my family tree?",
   },
-  "faq.a1": {
+  faq_a1: {
     ua: "Так, у налаштуваннях є два окремих перемикача: приховати профіль і приховати дерево. Ви маєте повний контроль над приватністю.",
     en: "Yes, there are two separate toggles in the settings: hide profile and hide tree. You have full control over your privacy.",
   },
-  "faq.q2": {
+
+  faq_q2: {
     ua: "Чи можуть родичі редагувати моє дерево?",
     en: "Can relatives edit my tree?",
   },
-  "faq.a2": {
+  faq_a2: {
     ua: "Ви можете надати права редагування окремим членам родини, запросивши їх до спільного простору. За замовчуванням лише ви редагуєте своє дерево.",
     en: "You can grant editing rights to individual family members by inviting them to a shared space. By default, only you edit your tree.",
   },
-  "faq.q3": {
+
+  faq_q3: {
     ua: "Чи зберігається інформація назавжди?",
     en: "Is the information stored forever?",
   },
-  "faq.a3": {
+  faq_a3: {
     ua: "Ми використовуємо надійні хмарні сховища з багаторівневим резервним копіюванням, щоб ваші спогади були в безпеці на довгі роки.",
     en: "We use reliable cloud storage with multi-level backups to ensure your memories stay safe for years to come.",
   },
-  "faq.q4": {
-    ua: "Як мої дані захищені?",
-    en: "How is my data protected?",
-  },
-  "faq.a4": {
+
+  faq_q4: { ua: "Як мої дані захищені?", en: "How is my data protected?" },
+  faq_a4: {
     ua: "Ми використовуємо сучасні протоколи шифрування. Ваші дані належать тільки вам, і ми не передаємо їх третім особам.",
     en: "We use modern encryption protocols. Your data belongs only to you, and we do not share it with third parties.",
   },
