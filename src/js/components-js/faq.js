@@ -1,6 +1,8 @@
 export function openFaq() {
   const faqItems = document.querySelectorAll(".faq-item");
 
+  if (!faqItems.length) return; // Перевірка, чи є FAQ на сторінці
+
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question");
 
@@ -22,9 +24,3 @@ export function openFaq() {
     });
   });
 }
-
-import { setLanguage } from "../components-js/language-switcher";
-document.addEventListener("DOMContentLoaded", () => {
-  const savedLang = localStorage.getItem("lang") || "en";
-  setLanguage(savedLang);
-});
