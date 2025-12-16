@@ -1,7 +1,8 @@
 export function openFaq() {
   const faqItems = document.querySelectorAll(".faq-item");
 
-  if (!faqItems.length) return; // Перевірка, чи є FAQ на сторінці
+  // Якщо на сторінці немає FAQ, просто виходимо, щоб не було помилок
+  if (!faqItems.length) return;
 
   faqItems.forEach((item) => {
     const question = item.querySelector(".faq-question");

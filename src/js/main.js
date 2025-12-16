@@ -52,14 +52,10 @@
 // }
 import { burgerMenu } from "./components-js/burger-menu.js";
 import { openFaq } from "./components-js/faq.js";
-// Переконайся, що translations.js лежить поруч з main.js
 import translations from "./translations.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Запускаємо бургер меню
   burgerMenu();
-
-  // 2. Запускаємо FAQ
   openFaq();
 
   // 3. Логіка мови
