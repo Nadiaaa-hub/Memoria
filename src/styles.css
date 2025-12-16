@@ -1548,7 +1548,7 @@ p {
 
 @media (max-width: 968px) {
   .about-split-section {
-    padding: 0 0 30px;
+    padding: 0;
     color: var(--color-med-grey);
     overflow: hidden;
   }
