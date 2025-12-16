@@ -24,15 +24,16 @@ export function setLanguage(lang) {
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (!key) return;
+    const keyParts = key.split(".");
+    let value = translations[keyParts[0]]?.[lang];
+    if (value === undefined) return;
 
-    const value = translations[key]?.[lang];
-    if (!value) return;
-
-    if (Array.isArray(value)) {
-      el.innerHTML = value.join("<br>");
-    } else {
-      el.innerHTML = value;
+    if (keyParts.length > 1 && Array.isArray(value)) {
+      const index = parseInt(keyParts[1], 10);
+      value = value[index];
     }
+
+    if (value) el.innerHTML = value;
   });
 
   langButtons.forEach((btn) => {
@@ -41,6 +42,7 @@ export function setLanguage(lang) {
 
   localStorage.setItem("lang", lang);
 }
+
 document.addEventListener("DOMContentLoaded", () => {
   initLanguageSwitcher();
 });
