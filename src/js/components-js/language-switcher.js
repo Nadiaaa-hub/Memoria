@@ -3,20 +3,23 @@ import translations from "../translations.js";
 export function setLanguage(lang) {
   const langButtons = document.querySelectorAll(".js-switch-button");
 
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    const keys = key.split(".");
-    let value = translations[keys[0]];
-    if (!value) return;
-    const langArray = value[lang];
-    const index = keys[1] ? Number(keys[1]) : null;
+  console.log("LANG SWITCHER LOADED");
 
-    if (index !== null && langArray && langArray[index] !== undefined) {
-      el.innerHTML = langArray[index];
-    } else if (Array.isArray(langArray)) {
-      el.innerHTML = langArray.join("<br>");
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.dataset.i18n;
+    const keys = key.split(".");
+    const group = translations[keys[0]];
+    if (!group) return;
+
+    const value = group[lang];
+    const index = keys[1] !== undefined ? Number(keys[1]) : null;
+
+    if (index !== null && Array.isArray(value)) {
+      el.innerHTML = value[index] ?? "";
+    } else if (Array.isArray(value)) {
+      el.innerHTML = value.join("<br>");
     } else {
-      el.innerHTML = langArray || "";
+      el.innerHTML = value ?? "";
     }
   });
 
