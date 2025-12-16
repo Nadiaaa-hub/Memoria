@@ -23,7 +23,7 @@ export function openFaq() {
   });
 }
 
-import { setLanguage } from "./components-js/language-switcher.js";
+import { setLanguage } from "../components-js/language-switcher";
 document.addEventListener("DOMContentLoaded", () => {
   const savedLang = localStorage.getItem("lang") || "en";
   setLanguage(savedLang);
