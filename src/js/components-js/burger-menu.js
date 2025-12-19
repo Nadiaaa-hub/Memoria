@@ -36,8 +36,6 @@ export function burgerMenu() {
     link.addEventListener("click", closeMenu);
   });
 
-  // --- ВАЖЛИВО: Оновити число тут ---
-  // Якщо екран стає ширшим за 1024px (ноутбук), закриваємо мобільне меню
   window.addEventListener("resize", () => {
     if (window.innerWidth > 1024 && burgerToggle.checked) {
       closeMenu();
