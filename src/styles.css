@@ -505,7 +505,7 @@ p {
 
 .download-cta-section__mockup--right {
   top: 50%;
-  right: 0;
+  right: 15%;
   transform: translateY(-50%);
 }
 
@@ -553,8 +553,13 @@ p {
   font-family: open sans;
   font-size: 25px;
   font-weight: 700;
+  padding-top: 77px;
 }
-
+@media (max-width: 768px) {
+ .download-cta-section__title {
+  padding-top: 50px;
+}
+}
 @media (max-width: 480px) {
   .download-cta-section__title {
     font-size: 22px;
@@ -564,7 +569,7 @@ p {
 
 .download-cta-section__subtitle {
   margin: 12px auto 24px;
-  max-width: 446px;
+  max-width: 420px;
   color: var(--color-text-primary);
 }
 
@@ -593,6 +598,7 @@ p {
   .download-cta-section__buttons-group {
     flex-direction: row;
     gap: 24px;
+    padding-bottom: 77px;
   }
 }
 
